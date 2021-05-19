@@ -6,8 +6,8 @@ from datetime import timedelta
 
 headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 while(1):
-    # welcome="https://api.telegram.org/bot1860762680:AAESCF3W8Kcb6dfUkZISTjz7UUSx5n7Q6e4/sendMessage?chat_id=-1001392556159&text=Hello myself Sourabh,developed by anonymous ,i will send real time covid vaccine availability slot notification for the district of Narsingpur,notification will be send after every 15 minutes"
-    # requests.get(welcome)
+    welcome="https://api.telegram.org/bot1860762680:AAESCF3W8Kcb6dfUkZISTjz7UUSx5n7Q6e4/sendMessage?chat_id=-1001392556159&text=Hello myself Sourabh,developed by anonymous ,i will send real time covid vaccine availability slot notification for the district of Narsingpur,notification will be send after every 15 minutes"
+    requests.get(welcome)
     msg=[]
     today = date.today()+timedelta(days=1)
     day=today.strftime("%d-%m-%Y")
